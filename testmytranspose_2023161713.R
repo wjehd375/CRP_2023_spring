@@ -1,3 +1,10 @@
+myvar04 <- matrix(c(1,2), nrow=2, ncol=1)
+myvar04
+mytranspose(myvar04)
+myvar04[1] == mytranspose(myvar04)[1] #TRUE
+myvar04[2] == mytranspose(myvar04)[2] #TRUE
+all.equal.raw((myvar04), mytranspose(mytranspose(myvar04))) #TRUE
+
 myvar05 <- c(1,2,NA,3)
 myvar05
 mytranspose(myvar05)
